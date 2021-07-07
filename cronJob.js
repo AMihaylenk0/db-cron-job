@@ -1,6 +1,6 @@
 const { Sequelize, Op  } = require('sequelize');
 require('dotenv').config();
-const sevenDaysAgo = new Date(new Date().setDate(new Date().getDate() - 7));
+const sevenDaysAgo = new Date(new Date().setDate(new Date().getDate() - 1));
 // const sequelize = new Sequelize(`${process.env.DATABASE_URI}?sslmode=require`, {
 const sequelize = new Sequelize(`${process.env.DATABASE_URI}?sslmode=require`, {
   url: process.env.DATABASE_URI,
