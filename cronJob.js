@@ -19,11 +19,11 @@ async function deleteRow() {
   try {
     await News.destroy({
       where: {
-        // created_at: {
-        //   // $lt: sevenDaysAgo,
-        //   [Op.lte]: sevenDaysAgo
-        // },
-        sportCategory: 'football'
+        created_at: {
+          // $lt: sevenDaysAgo,
+          [Op.lte]: sevenDaysAgo
+        },
+        // sportCategory: 'football'
       },
       // truncate: true,
       // restartIdentity: true // works only with truncate
